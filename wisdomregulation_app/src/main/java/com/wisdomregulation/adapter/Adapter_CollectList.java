@@ -210,16 +210,16 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
         return menuListData.get(position).getViewtype();
     }
 
-    public void addItem(ExpandMap expandMap) {
-        final int id = mCurrentItemId++;
-        menuListData.add(id, expandMap);
-        notifyItemInserted(id);
-    }
+//    public void addItem(ExpandMap expandMap) {
+//        final int id = mCurrentItemId++;
+//        menuListData.add(id, expandMap);
+//        notifyItemInserted(id);
+//    }
 
-    public void removeItem(int position) {
-        menuListData.remove(position);
-        notifyItemRemoved(position);
-    }
+//    public void removeItem(int position) {
+//        menuListData.remove(position);
+//        notifyItemRemoved(position);
+//    }
 
     @Override
     public int getItemCount() {

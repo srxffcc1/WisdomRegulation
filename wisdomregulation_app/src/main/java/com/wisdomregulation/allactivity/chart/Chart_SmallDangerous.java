@@ -21,14 +21,13 @@ import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
-import com.github.mikephil.charting.formatter.ValueFormatter;
+import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.listener.ChartTouchListener.ChartGesture;
 import com.github.mikephil.charting.listener.OnChartGestureListener;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.github.mikephil.charting.utils.ViewPortHandler;
 import com.wisdomregulation.R;
 import com.wisdomregulation.allactivity.base.Base_AyActivity;
 import com.wisdomregulation.staticlib.Static_ConstantLib;
@@ -105,7 +104,7 @@ public class Chart_SmallDangerous extends Base_AyActivity implements OnChartValu
 	private void initchartpie() {
 		Legend mLegend = mChartPie.getLegend();
 		mLegend.setEnabled(false);
-		mChartPie.setDescription("");
+
 		mChartPie.setHoleRadius(50f); //实心圆  
 		mChartPie.setTransparentCircleRadius(54f); // 半透明圈  
 		mChartPie.animateY(2500);//设置动画速度
@@ -118,7 +117,7 @@ public class Chart_SmallDangerous extends Base_AyActivity implements OnChartValu
 //		mChartBar.setScaleEnabled(false);
 		mChartBar.setPinchZoom(true);
 		mChartBar.setNoDataText("等待载入中");
-		mChartBar.setDescription("");
+
         XAxis xl = mChartBar.getXAxis();
         xl.setPosition(XAxisPosition.BOTTOM);
         xl.setTypeface(tf);
@@ -190,16 +189,22 @@ public class Chart_SmallDangerous extends Base_AyActivity implements OnChartValu
 			
 		});
 	}
+
+	@Override
+	public void onValueSelected(Entry e, Highlight h) {
+
+	}
+
 	@Override
 	public void onNothingSelected() {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
-	public void onValueSelected(Entry arg0, int arg1, Highlight arg2) {
-		toastshow("区域:"+yVals4show.get(arg0.getXIndex())+"--数量:"+yVals3show.get(arg0.getXIndex())+"个一般隐患");
-		
-	}
+//	@Override
+//	public void onValueSelected(Entry arg0, int arg1, Highlight arg2) {
+//		toastshow("区域:"+yVals4show.get(arg0.getXIndex())+"--数量:"+yVals3show.get(arg0.getXIndex())+"个一般隐患");
+//
+//	}
 	public void changeMaxSize(ArrayList<Float> yVals2){
 		float max=0;
 		for (int i = 0; i < yVals2.size(); i++) {
@@ -244,23 +249,23 @@ public class Chart_SmallDangerous extends Base_AyActivity implements OnChartValu
 //        setPieData(pieyVals1, xVals);
         setBarData(baryVals1, xVals);
 	}
-	private void setPieData(ArrayList<Entry> pieyVals1, ArrayList<String> xVals) {
+	private void setPieData(ArrayList<PieEntry> pieyVals1, ArrayList<String> xVals) {
 		PieDataSet pieSet = new PieDataSet(pieyVals1, "地区和企业数量统计");
         pieSet.setSelectionShift(10f);
         pieSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
         pieSet.setDrawValues(false);
         pieSet.setSliceSpace(5f);
-        PieData piedata = new PieData(xVals, pieSet);
-        piedata.setValueFormatter(new ValueFormatter() {
-			
-			@Override
-			public String getFormattedValue(float arg0, Entry arg1, int arg2,
-					ViewPortHandler arg3) {
-				
-				String tmp=String.format("%.2f",arg0);
-				return tmp+"%";
-			}
-		});
+        PieData piedata = new PieData(pieSet);
+//        piedata.setValueFormatter(new ValueFormatter() {
+//
+//			@Override
+//			public String getFormattedValue(float arg0, Entry arg1, int arg2,
+//					ViewPortHandler arg3) {
+//
+//				String tmp=String.format("%.2f",arg0);
+//				return tmp+"%";
+//			}
+//		});
         piedata.setValueTextSize(10f);
         piedata.setValueTextColor(Color.BLACK);
         piedata.setValueTypeface(tf);
@@ -274,17 +279,17 @@ public class Chart_SmallDangerous extends Base_AyActivity implements OnChartValu
         set1.setColors(ColorTemplate.VORDIPLOM_COLORS);
         ArrayList<IBarDataSet> dataSets = new ArrayList<IBarDataSet>();
         dataSets.add(set1);
-        set1.setValueFormatter(new ValueFormatter() {
-			
-			@Override
-			public String getFormattedValue(float arg0, Entry arg1, int arg2,
-					ViewPortHandler arg3) {
-				
-				String tmp=(int)arg0+"";
-				return tmp;
-			}
-		});
-        BarData data = new BarData(xVals, dataSets);
+//        set1.setValueFormatter(new ValueFormatter() {
+//
+//			@Override
+//			public String getFormattedValue(float arg0, Entry arg1, int arg2,
+//					ViewPortHandler arg3) {
+//
+//				String tmp=(int)arg0+"";
+//				return tmp;
+//			}
+//		});
+        BarData data = new BarData( dataSets);
         data.setValueTextSize(15f);
         data.setValueTypeface(tf);
         mChartBar.setData(data);

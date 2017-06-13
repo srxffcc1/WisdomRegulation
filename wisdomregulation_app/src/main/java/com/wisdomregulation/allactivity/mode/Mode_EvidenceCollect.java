@@ -201,6 +201,7 @@ public class Mode_EvidenceCollect extends Base_AyActivity {
 			}
 
 		}
+//		expandList.add(new ExpandMap("2017-06-14").setViewtype(0));
 	}
 	public void showPictureCollect(View view) {
 		pop.dismiss();

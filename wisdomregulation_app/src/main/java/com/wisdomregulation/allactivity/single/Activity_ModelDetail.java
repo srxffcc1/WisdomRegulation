@@ -18,9 +18,6 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import com.wisdomregulation.R;
 import com.wisdomregulation.allactivity.base.Base_AyActivity;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Activity_ModelDetail extends Base_AyActivity implements
 OnChartValueSelectedListener{
 	private LineChart mChart;
@@ -45,7 +42,7 @@ OnChartValueSelectedListener{
 //        // add empty data
         mChart.setData(data);
         mChart.setNoDataText("正在连接现场");
-        mChart.setDescription("");
+//        mChart.setDescription("");
         new Handler().postDelayed(new Runnable() {
 			
 			@Override
@@ -118,7 +115,7 @@ OnChartValueSelectedListener{
             }
 
             // add a new x-value first
-            data.addXValue(new SimpleDateFormat("HH:mm:ss").format(new Date()));
+//            data.addXValue(new SimpleDateFormat("HH:mm:ss").format(new Date()));
             data.addEntry(new Entry((float) (Math.random() * 40) + 30f, set.getEntryCount()), 0);
 
 
@@ -130,7 +127,7 @@ OnChartValueSelectedListener{
             // mChart.setVisibleYRange(30, AxisDependency.LEFT);
 
             // move to the latest entry
-            mChart.moveViewToX(data.getXValCount() - 21);
+//            mChart.moveViewToX(data.getXValCount() - 21);
 
             // this automatically refreshes the chart (calls invalidate())
             // mChart.moveViewTo(data.getXValCount()-7, 55f,
@@ -166,13 +163,18 @@ OnChartValueSelectedListener{
 		
 	}
 
-	@Override
-	public void onValueSelected(Entry e, int dataSetIndex, Highlight h) {
-		// TODO Auto-generated method stub
-		
-	}
+//	@Override
+//	public void onValueSelected(Entry e, int dataSetIndex, Highlight h) {
+//		// TODO Auto-generated method stub
+//
+//	}
 
-	@Override
+    @Override
+    public void onValueSelected(Entry e, Highlight h) {
+
+    }
+
+    @Override
 	public void onNothingSelected() {
 		// TODO Auto-generated method stub
 		
