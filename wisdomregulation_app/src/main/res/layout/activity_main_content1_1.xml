@@ -1,0 +1,1045 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:context="com.wisdomregulation.allactivity.single.Activity_Main" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/titleheight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="981"
+            android:background="#2378BB"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="48" >
+            </LinearLayout>
+            <com.wisdomregulation.frame.AutoClickImageView
+                android:id="@+id/mainicon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="150"
+                android:clickable="true"
+                android:onClick="toMode"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_02_head" />
+            <TextView android:layout_width="0dp"
+                android:id="@+id/newtitle"
+                android:layout_height="match_parent"
+                android:layout_weight="650"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"/>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="200"
+                android:orientation="vertical" >
+
+                <com.wisdomregulation.frame.PassLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="44" />
+
+                    <TextView
+                        android:id="@+id/more"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="62"
+                        android:background="@drawable/seach_linearlayoutbg5"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="toSyncImp"
+                        android:text="信息同步"
+                        android:textColor="@drawable/text_color_selector6" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="44" />
+                </com.wisdomregulation.frame.PassLinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#ececec" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="282"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="990"
+            android:background="@drawable/main_08" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="19" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="#99000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="203"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="56" >
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="202" >
+
+                        <com.wisdomregulation.frame.AutoClickImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/headpicture3" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="2px"
+                                android:layout_height="match_parent" >
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px" >
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" >
+
+                                    <com.wisdomregulation.frame.AutoClickImageView
+                                        android:id="@+id/headpicture"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:clickable="true"
+                                        android:onClick="showPictureChose"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/headpicture2" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2px" >
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="2px"
+                                android:layout_height="match_parent" >
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="830"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="19" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/usernametext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="370"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="toMode"
+                            android:text="欢迎登录,未登录!"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="250"
+                            android:gravity="center"
+                            android:text="修改密码"
+                            android:visibility="gone"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:text="|"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/loginout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="170"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="toMode"
+                            android:text="注销"
+                            android:textColor="@drawable/text_color_selector6" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="#ececec" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="226"
+        android:background="#F8F8F8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="223"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="180"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1022"
+                    android:background="@drawable/gray_border"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="174"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30" >
+                        </LinearLayout>
+
+                        <com.wisdomregulation.frame.AutoClickImageView
+                            android:id="@+id/Mode_GovernmentNotice"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="120"
+                            android:clickable="true"
+                            android:onClick="toMode"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/main_11" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="24" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="690"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="25" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Mode_GovernmentNotice2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="96"
+                            android:clickable="true"
+                            android:onClick="passtoonlynotice"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/noticetitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="50"
+                                android:text="暂无新通知"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:id="@+id/noticetime"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="50"
+                                android:text=""
+                                android:textColor="#ABABAB" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="25" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="26" >
+                        </LinearLayout>
+
+                        <com.wisdomregulation.frame.AutoClickImageView
+                            android:id="@+id/isnewnotice"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="96"
+                            android:visibility="invisible"
+                            android:src="@drawable/main_14" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="26" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#ececec" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="422"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="419"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="920"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_CompanyInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_18" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_CheckMain"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_21" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_Law_Main"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_23" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_DangerousMain"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_25" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_BookPrinter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_31" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_History"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_32" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_EvidenceCollect"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:src="@drawable/main_33" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" >
+                    </LinearLayout>
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_MaxDangerous"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="200"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_35" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#ececec" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F8F8F8"
+        android:layout_weight="19" >
+    </LinearLayout>
+    <!-- gg -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F8F8F8"
+        android:layout_weight="255" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1027"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="202"
+                    android:orientation="horizontal" >
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_ChartAll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="300"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_41" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ececec" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="300"
+                        android:orientation="vertical" >
+
+                        <com.wisdomregulation.frame.AutoClickImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="42"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/main_45" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="170"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/passtocheck"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/checkcount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="86"
+                                    android:clickable="true"
+                                	android:onClick="passtocheck"
+                                    android:gravity="bottom|center_horizontal"
+                                    android:text="0"
+                                    android:textColor="@drawable/text_color_selector3" />
+
+                                <TextView
+                                    android:id="@+id/smallneedcheck"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="78"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="toMode"
+                                    android:textSize="10sp"
+                                    android:text="执法检查" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/passtoagaincheck"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:onClick="passtoagaincheck"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/checkagaincount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="86"
+                                    android:gravity="bottom|center_horizontal"
+                                    android:text="0"
+                                    android:clickable="true"
+                                	android:onClick="passtoagaincheck"
+                                    android:textColor="@drawable/text_color_selector3" />
+
+                                <TextView
+                                    android:id="@+id/smallneedcheck2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="78"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="toMode"
+                                    android:textSize="10sp"
+                                    android:text="执法复查" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ececec" >
+                    </LinearLayout>
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_GovernmentContacts"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="300"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_42" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- cv -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" >
+
+        <com.wisdomregulation.frame.AutoClickImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_51" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="411"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="419"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1020"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_Library1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_54" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ececec" >
+                    </LinearLayout>
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_Library2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:src="@drawable/main_56" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ececec" >
+                    </LinearLayout>
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_Library3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_58" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="#ececec" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_Library4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_59" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ececec" >
+                    </LinearLayout>
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_Library5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:src="@drawable/main_64" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ececec" >
+                    </LinearLayout>
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:id="@+id/Mode_Library6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:clickable="true"
+                        android:onClick="toMode"
+                        android:src="@drawable/main_69" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#ececec" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

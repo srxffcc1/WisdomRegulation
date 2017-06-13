@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters  'armeabi-v7a'//,'x86', 'x86_64', 'arm64-v8a','armeabi',armeabi-v7a
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile project(':buglyhelp')
+    compile project(':getui')
+    compile project(':kjframe')
+    //    compile project(':vitamio')
+    compile project(':baidumapapi')
+    //    compile project(':mupdf')
+    compile project(':printLib')
+    compile('com.android.support:design:' + rootProject.supportVersion)
+//    compile 'com.squareup.picasso:picasso:2.5.2'
+//    compile project(':twowaylayout')
+}

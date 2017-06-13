@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        manifestPlaceholders = [
+                GETUI_APP_ID : "WpKCCUBUtJ7qdM7BgwsTLA",
+                GETUI_APP_KEY : "dVDPLPnamz6arzy4h6hGu2",
+                GETUI_APP_SECRET : "bVoEEya7W37RJ0e2nLg7R6"
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile ('com.android.support:design:'+rootProject.supportVersion)
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ~ Copyright (C) 2015 Baidu, Inc. All Rights Reserved. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="gdmapapi.sdk"
+          android:versionCode="1"
+          android:versionName="1.0" >
+
+<application>
+    <meta-data
+        android:name="com.amap.api.v2.apikey"
+        android:value="382c608d07f7b7ca966475479b6e67cd"/>
+</application>
+
+</manifest>

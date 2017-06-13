@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wisdomregulation.allactivity.single.Activity_Welcome" >
+
+    <LinearLayout
+        android:id="@+id/removeview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1425"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lawList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@null" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add2finishplanarea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="145"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="add"
+        android:background="#2378BB"
+        android:textColor="@color/white"
+        android:text="新增执法计划" />
+
+</LinearLayout>

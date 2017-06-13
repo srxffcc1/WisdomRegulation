@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="153"
+        android:background="#2378BB"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="44"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="62"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="32" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="125"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:gravity="center"
+                android:onClick="back"
+                android:src="@drawable/evidence_02" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230" />
+
+            <TextView
+                android:id="@+id/newtitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="240"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="图库" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="330" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="44"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#B2C0CB"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/main_grid"
+        android:layout_weight="1690"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="20dip"
+        android:gravity="center"
+        android:verticalSpacing="20dip"
+        android:columnWidth="90dip"
+        android:numColumns="2" >
+    </GridView>
+
+</LinearLayout>

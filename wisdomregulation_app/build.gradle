@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.wisdomregulation"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1"
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters  'armeabi-v7a'//,'x86', 'x86_64', 'arm64-v8a','armeabi',armeabi-v7a
+        }
+        testApplicationId "com.wisdomregulationdebug"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+    dexOptions{
+        jumboMode true
+    }
+    signingConfigs {
+        debug {
+            storeFile file("./debug_keysrx_password=android.keystore")
+            keyPassword 'android'
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+        }
+        release {
+            keyAlias 'keysrxs'
+            keyPassword '980122'
+            storeFile file("./release_keysrxs_password=980122.keystore")
+            storePassword '980122'
+        }
+
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        debug {
+
+
+        }
+
+        release {
+            zipAlignEnabled true
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {
+        flavors_release {}
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    output.outputFile.name.replace(output.outputFile.name, "移动执法新版本" + "_v${variant.versionName}.apk"))
+        }
+    }
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+dependencies {
+    compile project(':wisdomregulation_frame')
+}

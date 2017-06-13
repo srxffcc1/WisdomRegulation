@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wisdomregulation"
+    android:installLocation="preferExternal"
+>
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <!--<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />-->
+    <!-- 这个权限用于进行网络定位 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!-- 这个权限用于访问GPS定位 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!-- 用于读取手机当前的状态 -->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <!-- 访问网络，网络定位需要上网 -->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+
+    <!--<uses-feature android:name="android.hardware.camera" />-->
+
+    <!-- 个推SDK权限配置开始 -->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!-- ibeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!-- 浮动通知权限 -->
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.wisdomregulation" /> <!-- 替换为第三方应用的包名 -->
+    <permission
+        android:name="getui.permission.GetuiService.com.wisdomregulation"
+        android:protectionLevel="normal" >
+    </permission> <!-- 替换为第三方应用的包名 -->
+    <!-- 个推SDK权限配置结束 -->
+    <instrumentation android:targetPackage="com.wisdomregulation" android:name="android.test.InstrumentationTestRunner"></instrumentation>
+
+    <application
+        android:largeHeap="true"
+        android:name="com.wisdomregulation.app.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="48ae76de3f" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="SAO65tZroTghLbo3gzREBTq3HeOGvu7m" />
+
+        <activity
+            android:name="com.wisdomregulation.allactivity.single.Activity_Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+
+        
+
+		
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" />
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 此服务为百度sdk可以实现跟随 -->
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.wisdomregulation"
+            android:exported="true"
+            android:process=":pushservice" /> <!-- 替换为第三方应用的包名 -->
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <receiver
+            android:name="com.wisdomregulation.broadcast.ZhiPushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.TSyI3SBmdZ7gOzmIMs3mC4" /> <!-- 替换为第三方应用的APPID -->
+            </intent-filter>
+        </receiver>
+        <!-- 个推SDK配置结束 -->
+
+        <activity android:name="com.wisdomregulation.test.TestEdit" >
+        </activity>
+        <activity android:name="com.wisdomregulation.test.VideoViewDemo" android:multiprocess="true">
+        </activity>
+        <activity android:name="com.wisdomregulation.bn.BNDemoLocation" >
+        </activity>
+        <activity android:name="com.wisdomregulation.bn.BNOverLayDemo" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_BookPrinter" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_BombMain" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_Library" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_CheckMain" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_CompanyInfo" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_EvidenceCollect" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_GovernmentNotice" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_GovernmentContacts" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_History" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_Law_Main" android:exported="true">
+            <intent-filter >
+                <category android:name="android.intent.category.DEFAULT"/>
+                
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_DangerousCheckMain" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.mode.Mode_ChartMain" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tab.Tab_CompanyInfo" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tab.Tab_Bomb" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tab.Tab_Check" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tab.Tab_History_Check2Again" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tab.Tab_Law" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tab.Tab_Dangerous" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tab.Tab_CheckAgain" >
+        </activity>
+        <activity android:name=".allactivity.single.Activity_Level_BookEdit" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_BookEdit" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_LawList" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_LawDetail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Contact" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Notice" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Plan" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_BombList" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_BombInfo" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_ChoseCompany_ToCheck" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Library_Detail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_CheckAgain" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_History_CheckOption" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_PlanDetail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_VideoDetail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Video" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_ModelDetail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Model" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_CompanyDetail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_BookEdit_Detail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_History_AgainCheck" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_History_Law" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_History_Check" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_CheckOptionList" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_CheckOptionDetail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Login" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Main" android:launchMode="singleTop">
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_PictureCollect" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_PlanInsert" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_DangerousHaveCheckCompany" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_DangerousNoHaveCheckCompany" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_CheckAgainOptionList" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_AgainAdvice" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_DangerousOption" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_ChoseCompany_ToLaw" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Law_Zip" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_DangerousCheckList" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_BookPrinter_Edit" >
+        </activity>
+        <activity android:name=".allactivity.single.Activity_History_CheckAgainDetail" >
+        </activity>
+        <activity android:name=".allactivity.single.Activity_History_CheckDetail" >
+        </activity>
+        <activity android:name=".allactivity.single.Activity_History_LawDetail" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.single.Activity_Point" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.chart.Chart_CompanyCount" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.chart.Chart_SmallDangerous" >
+        </activity>
+        <activity
+            android:name="com.wisdomregulation.allactivity.single.Activity_DownLoad"
+            android:theme="@style/NetWorkYesOrcontentActivity" >
+        </activity>
+        <activity
+            android:name="com.wisdomregulation.allactivity.single.Activity_DownLoad2"
+            android:theme="@style/NetWorkYesOrcontentActivity" >
+        </activity>
+        <activity android:name="com.frame.imagescan.ScanMainActivity" >
+        </activity>
+        <activity android:name="com.frame.zxing.CaptureActivity" >
+        </activity>
+        <activity android:name="com.frame.imagescan.ShowImageActivity" >
+        </activity>
+        <activity android:name="com.frame.luyin.LuYinActivity" >
+        </activity>
+        <activity android:name="com.frame.qqcutpic.CutMainActivity" >
+        </activity>
+        <activity android:name="com.frame.qqcutpic.ClipActivity" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tmp.Tmp_PhotoActivity" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tmp.Tmp_VoiceActivity" >
+        </activity>
+        <activity android:name="com.wisdomregulation.allactivity.tmp.Tmp_VideoActivity" >
+        </activity>
+        <activity
+            android:name="com.wisdomregulation.bn.BNDemoMainActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wisdomregulation.bn.BNDemoGuideActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" >
+        </activity>
+        <activity android:name="com.wisdomregulation.test.UnderMoreActivity" >
+        </activity>
+        <activity android:name="com.frame.fileselector.activity.MainActivity" >
+        </activity>
+        <activity android:name="com.frame.fileselector.activity.FileHomeActivity" >
+        </activity>
+        <activity android:name="com.frame.fileselector.activity.FileMyActivity" >
+        </activity>
+        <activity android:name="com.frame.fileselector.activity.FileFolderActivity" >
+        </activity>
+
+        <service android:name="com.wisdomregulation.service.FloatViewService" >
+        </service>
+        <service
+            android:name="com.wisdomregulation.test.ZhiLocationService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.wisdomregulation.test.ZhiLocationService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.artifex.mupdfdemo.MuPDFActivity" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.OutlineActivity"
+            android:label="@string/outline_title"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.PrintDialogActivity"
+            android:label="@string/print"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name=".allactivity.mode.Mode_EvidenceCollect3" />
+
+        <uses-library android:name="android.test.runner"/>
+    </application>
+
+</manifest>

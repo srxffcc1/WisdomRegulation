@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40" >
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1000" >
+
+        <LinearLayout
+            android:id="@+id/detaillayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/detailfield1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  " />
+
+            <EditText
+                android:id="@+id/detailvalue1"
+                android:background="@drawable/textview_border6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="invisible"
+                android:tag="goal"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detaillayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="934"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/detailfield2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  " />
+
+                <EditText
+                    android:id="@+id/detailvalue2"
+                    android:background="@drawable/textview_border6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="invisible"
+                    android:tag="goal"
+                    android:textColor="#666666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66" >
+
+                <com.wisdomregulation.frame.AutoCheckBox
+                    android:id="@+id/pass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:src="@drawable/toggle3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detaillayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/detailfield3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  " />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/detailvalue3"
+                android:layout_width="match_parent"
+                android:layout_height="450px"
+                android:background="@drawable/textview_border6"
+                android:gravity="left"
+                android:hint="未填写"
+                android:padding="5px"
+                android:tag="goal"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detaillayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/detailfield4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/detailvalue4"
+                android:background="@drawable/textview_border6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="invisible"
+                android:tag="goal"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detaillayout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="934"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/detailfield5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/detailvalue5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:tag="goal"
+                    android:visibility="invisible"
+                    android:textColor="#666666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66" >
+
+                <com.wisdomregulation.frame.AutoCheckBox
+                    android:id="@+id/pass5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:src="@drawable/toggle3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detaillayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/detailfield6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioGroup
+                android:id="@+id/detailgroup0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="goal"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/detailradio0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="210"
+                    android:background="@drawable/radiobuttoncolor2"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@drawable/text_color_selector4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="44" />
+
+                <RadioButton
+                    android:id="@+id/detailradio1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="210"
+                    android:background="@drawable/radiobuttoncolor2"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@drawable/text_color_selector4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="44" />
+
+                <RadioButton
+                    android:id="@+id/detailradio2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="210"
+                    android:background="@drawable/radiobuttoncolor2"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@drawable/text_color_selector4" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detaillayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/detailfield7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/detailgroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="goal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/detailradio00"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="210"
+                        android:background="@drawable/radiobuttoncolor2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@drawable/text_color_selector4" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="44" />
+
+                    <RadioButton
+                        android:id="@+id/detailradio01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="210"
+                        android:background="@drawable/radiobuttoncolor2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@drawable/text_color_selector4" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="44" />
+
+                    <RadioButton
+                        android:id="@+id/detailradio02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="210"
+                        android:background="@drawable/radiobuttoncolor2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@drawable/text_color_selector4" />
+                                        <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="44" />
+
+                    <RadioButton
+                        android:id="@+id/detailradio03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="210"
+                        android:background="@drawable/radiobuttoncolor2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@drawable/text_color_selector4" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  " />
+
+            <GridLayout
+                android:id="@+id/detaillayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4" >
+            </GridLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40" >
+    </LinearLayout>
+
+</LinearLayout>

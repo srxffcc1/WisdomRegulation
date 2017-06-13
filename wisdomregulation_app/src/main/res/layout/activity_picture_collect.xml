@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1700" >
+
+        <com.frame.photo.CameraGLSurfaceView
+            android:id="@+id/camera_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="145"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/finishpicture"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2378BB"
+            android:gravity="center"
+            android:onClick="finishPicture"
+            android:text="拍照"
+            android:textColor="@drawable/text_color_selector6" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2378BB"
+            android:gravity="center"
+            android:onClick="finishActivity"
+            android:text="退出拍照"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

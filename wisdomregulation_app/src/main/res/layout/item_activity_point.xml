@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.wisdomregulation.allactivity.single.Activity_Welcome" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:background="#F5F5F5" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="303" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="32" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1016"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="150"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="840"
+                    android:gravity="center_vertical"
+                    android:text="位置:机房"
+                    android:textColor="#333333" />
+
+                <LinearLayout
+                    android:id="@+id/passtovideo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="176"
+                    android:orientation="horizontal" >
+
+                    <com.wisdomregulation.frame.AutoClickImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="57"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bomb_10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="117"
+                        android:gravity="center"
+                        android:text="视屏"
+                        android:textColor="@drawable/text_color_selector9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="#BDBDBD" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="150"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="模拟量: " />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/model11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+
+                        <TextView
+                            android:id="@+id/model1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="177"
+                            android:background="@drawable/seach_linearlayoutbg8"
+                            android:gravity="center"
+                            android:paddingBottom="10px"
+                            android:paddingTop="10px"
+                            android:text="温度"
+                            android:textColor="@drawable/text_color_selector9" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/model12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:id="@+id/model2"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="177"
+                            android:background="@drawable/seach_linearlayoutbg8"
+                            android:gravity="center"
+                            android:paddingBottom="10px"
+                            android:paddingTop="10px"
+                            android:text="湿度"
+                            android:textColor="@drawable/text_color_selector9" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/model13"
+                        android:visibility="invisible"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:id="@+id/model3"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="177"
+                            android:background="@drawable/seach_linearlayoutbg8"
+                            android:gravity="center"
+                            android:paddingBottom="10px"
+                            android:paddingTop="10px"
+                            android:text="项目"
+                            android:textColor="@drawable/text_color_selector9" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/model14"
+                        android:layout_width="0dp"
+                        android:visibility="invisible"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:id="@+id/model4"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="177"
+                            android:background="@drawable/seach_linearlayoutbg8"
+                            android:gravity="center"
+                            android:paddingBottom="10px"
+                            android:paddingTop="10px"
+                            android:text="项目"
+                            android:textColor="@drawable/text_color_selector9" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="32" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.android.support:design:' + rootProject.supportVersion)
+    compile 'com.github.promeg:tinypinyin:2.0.3'
+    // TinyPinyin核心包，约80KB
+    compile 'com.github.promeg:tinypinyin-lexicons-java-cncity:2.0.3'
+    // 可选，适用于Java的中国地区词典
+    compile 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3'
+    // 可选，适用于Android的中国地区词典
+}

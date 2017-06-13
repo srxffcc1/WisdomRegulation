@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wisdomregulation.allactivity.single.Activity_Welcome" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="153"
+        android:background="#2378BB"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="44"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="62"
+            android:clickable="true"
+            android:onClick="back"
+            android:orientation="horizontal" >
+
+            <com.wisdomregulation.frame.AutoClickImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="92"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plan_02" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20" />
+
+            <TextView
+                android:id="@+id/newtitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="920"
+                android:gravity="left|center_vertical"
+                android:text="隐患详情"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="44"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#B2C0CB"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1547" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="1px"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1px" >
+
+            <LinearLayout
+                android:id="@+id/fieldContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/historyText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="145"
+        android:background="#2378BB"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="tofinishOption"
+        android:text="保存"
+        android:textColor="@color/white" />
+
+</LinearLayout>

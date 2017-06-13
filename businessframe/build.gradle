@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "WpKCCUBUtJ7qdM7BgwsTLA",
+                GETUI_APP_KEY   : "dVDPLPnamz6arzy4h6hGu2",
+                GETUI_APP_SECRET: "bVoEEya7W37RJ0e2nLg7R6"
+        ]
+        renderscriptTargetApi 23
+        renderscriptSupportModeEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.android.support:design:' + rootProject.supportVersion)
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2@aar'
+    //    compile files('libs/itext5.11.jar') //比较庞大
+    compile 'com.github.barteksc:android-pdf-viewer:2.5.1@aar'
+    compile files('libs/kjhttp.jar')
+    compile ('com.jakewharton:butterknife:8.5.1@aar'){ exclude module: 'support-compat' }
+    annotationProcessor('com.jakewharton:butterknife-compiler:8.5.1')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.zxing:core:3.3.0'
+    compile('com.soundcloud.android:android-crop:1.0.1@aar') { exclude group: 'com.android.support' }
+    compile('com.github.adrielcafe:AndroidAudioRecorder:0.3.0@aar') { exclude group: 'com.android.support' }
+    compile('cn.finalteam:galleryfinal:1.4.8.7@aar') { exclude group: 'com.android.support' }
+    compile('com.nbsp:library:1.2@aar') { exclude group: 'com.android.support' }
+    compile('com.zhy:autolayout:1.4.5@aar') { exclude group: 'com.android.support' }
+    compile('com.airbnb.android:lottie:1.5.3@aar') { exclude group: 'com.android.support' }
+    compile files('libs/AMap3DMap_5.0.0_AMapSearch_5.0.0_20170311.jar')
+    compile files('libs/GetuiSDK2.10.2.0.jar')
+    compile('me.shaohui.advancedluban:library:1.3.5') {
+        exclude group: 'io.reactivex.rxjava2'
+        exclude group: 'com.android.support' }
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile ('com.github.adrielcafe:AndroidAudioRecorder:0.3.0'){ exclude group: 'com.android.support' }
+    compile ('q.rorbin:badgeview:1.1.0'){ exclude group: 'com.android.support' }
+    compile project(':rtspplayer')
+}

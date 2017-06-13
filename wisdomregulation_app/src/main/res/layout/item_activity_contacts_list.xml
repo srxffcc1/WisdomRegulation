@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    tools:context="com.wisdomregulation.allactivity.single.Activity_Welcome" >
+
+    <LinearLayout
+        android:id="@+id/passtocontact"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="174"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" >
+        </LinearLayout>
+
+        <com.wisdomregulation.frame.AutoClickImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="134"
+            android:scaleType="fitCenter"
+            android:src="@drawable/contacts_07" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="878"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="14" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passtocontact2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="572"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/contactname"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left|center_vertical"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/contactpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="48"
+                    android:gravity="left|center_vertical"
+                    android:text="职位"
+                    android:textColor="#9A9A9A" />
+            </LinearLayout>
+
+            <com.wisdomregulation.frame.AutoClickImageView
+                android:id="@+id/passtophone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="99"
+                android:scaleType="fitCenter"
+                android:src="@drawable/contacts_10" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="94"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#BDBDBD" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.wisdomregulation.frame.AutoClickImageView
+                android:id="@+id/passtomessage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="99"
+                android:scaleType="fitCenter"
+                android:src="@drawable/contacts_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="49" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#BDBDBD" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="28" >
+    </LinearLayout>
+
+</LinearLayout>

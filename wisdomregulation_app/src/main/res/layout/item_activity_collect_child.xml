@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="32" />
+
+    <com.wisdomregulation.frame.SimpleGridView
+        android:id="@+id/sourceGrid"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1016"
+        android:gravity="center"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" >
+    </com.wisdomregulation.frame.SimpleGridView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="32" />
+
+</LinearLayout>

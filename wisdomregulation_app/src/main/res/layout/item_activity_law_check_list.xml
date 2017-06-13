@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/needscale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.wisdomregulation.allactivity.single.Activity_Welcome" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="#E5E5E5" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topplan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="169"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="29"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/lawDetailItem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="582"
+            android:gravity="left|center_vertical"
+            android:text="企业名称" />
+                        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="left|center_vertical"
+            android:text="" />
+                <TextView
+            android:id="@+id/checkState"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="210"
+            android:textColor="#FF7B0F"
+            android:gravity="right|center_vertical"
+            android:text="检查状态" />
+                        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="left|center_vertical"
+            android:text="" />
+        <TextView
+            android:id="@+id/gotocheck"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="210"
+            android:gravity="right|center_vertical"
+            android:text="前往检查"
+            android:textColor="#2162C8" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="29"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="29"
+            android:text="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1022"
+            android:background="#BDBDBD"
+            android:text="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="29"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="148"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="72"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/left1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="358"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70" />
+
+                <com.wisdomregulation.frame.AutoClickImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="230"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/plan_03" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#BDBDBD" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/left2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="358"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70" />
+
+                <com.wisdomregulation.frame.AutoClickImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="230"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/plan_05" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#BDBDBD" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/left3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="358"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70" />
+
+                <com.wisdomregulation.frame.AutoClickImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="230"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/plan_07" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BDBDBD" >
+    </LinearLayout>
+
+</LinearLayout>
