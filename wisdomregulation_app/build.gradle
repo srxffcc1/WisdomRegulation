@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-
     defaultConfig {
         applicationId "com.wisdomregulation"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -37,17 +36,13 @@ android {
             storeFile file("./release_keysrxs_password=980122.keystore")
             storePassword '980122'
         }
-
     }
-
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
         debug {
-
-
         }
 
         release {
@@ -59,11 +54,9 @@ android {
             signingConfig signingConfigs.release
         }
     }
-
     productFlavors {
         flavors_release {}
     }
-
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             output.outputFile = new File(

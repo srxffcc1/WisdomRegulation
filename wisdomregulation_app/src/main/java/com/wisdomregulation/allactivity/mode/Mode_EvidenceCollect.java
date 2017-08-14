@@ -30,9 +30,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mode_EvidenceCollect extends Base_AyActivity {
-	RecyclerView sourceGrid;
+
 	private PopupWindow pop;
 	private String voicepath;
+	RecyclerView sourceGrid;
 	GridLayoutManager staggeredGridLayoutManager;
 	LinearLayout needshowunder;
 	private List<ExpandMap> expandList;
@@ -130,7 +131,6 @@ public class Mode_EvidenceCollect extends Base_AyActivity {
 
 		savehead = this.getIntent().getStringExtra("savehead");
 		expandList=new ArrayList<ExpandMap>();
-		int splitcount = 4;
 		adapter = new Adapter_CollectList(this, expandList);
 
 	}

@@ -39,8 +39,9 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
     private int mCurrentItemId = 0;
     int orientation = 1;//0为横1为竖直
     private Map<Integer, Bitmap> bitmapmap = new HashMap<Integer, Bitmap>();
-    private boolean cancheck=false;
-    public  Map<Integer,Boolean> checkmap=new HashMap<Integer,Boolean>();
+    private boolean cancheck = false;
+    public Map<Integer, Boolean> checkmap = new HashMap<Integer, Boolean>();
+
     public Adapter_CollectList(Activity context, List<ExpandMap> maplist) {
         this.context = context;
 
@@ -55,10 +56,12 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
     public void setCancheck(boolean cancheck) {
         this.cancheck = cancheck;
     }
-    public void clear(){
-        cancheck=false;
+
+    public void clear() {
+        cancheck = false;
         checkmap.clear();
     }
+
     @Override
     public void onAttachedToRecyclerView(final RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
@@ -111,17 +114,17 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
                     break;
                 case 1:
                     final ImageView tmp = ((ViewHolderContent) holder).logimage;
-                    final AutoCheckBox checklogo=((ViewHolderContent) holder).check;
-                    final ImageView deletemark=((ViewHolderContent) holder).deletemark;
-                    Help_ImageLoader.getInstance().load2(tmp,context, menuListData.get(position).getEntityvalue().getFileallpath(),Mode_EvidenceCollect.dialogdismiss);
+                    final AutoCheckBox checklogo = ((ViewHolderContent) holder).check;
+                    final ImageView deletemark = ((ViewHolderContent) holder).deletemark;
+                    Help_ImageLoader.getInstance().load2(tmp, context, menuListData.get(position).getEntityvalue().getFileallpath(), Mode_EvidenceCollect.dialogdismiss);
 //                    Help_ImageLoader.getInstance().loadImage(menuListData.get(position).getEntityvalue().getFileallpath(),tmp);
                     ((ViewHolderContent) holder).logimage.setOnClickListener(new View.OnClickListener() {
 
                         @Override
                         public void onClick(View v) {
-                            if(!cancheck){
+                            if (!cancheck) {
                                 menuListData.get(position).getEntityvalue().open();
-                            }else{
+                            } else {
                                 checklogo.performClick();
                             }
                         }
@@ -130,9 +133,9 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
 
                         @Override
                         public void onClick(View v) {
-                            if(!cancheck){
+                            if (!cancheck) {
                                 Dialog_Tool.showDialog_Rename(context, menuListData.get(position).getEntityvalue());
-                            }else{
+                            } else {
                                 checklogo.performClick();
                             }
 
@@ -141,7 +144,7 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
                     ((ViewHolderContent) holder).logimage.setOnLongClickListener(new View.OnLongClickListener() {
                         @Override
                         public boolean onLongClick(View v) {
-                            cancheck=!cancheck;
+                            cancheck = !cancheck;
                             checkBoxFresh();
                             notifyDataSetChanged();
                             return true;
@@ -151,7 +154,7 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
 
                         @Override
                         public void onCheckedChanged(View buttonView, boolean isChecked) {
-                            System.out.println("checkmap:put"+position+":"+isChecked);
+                            System.out.println("checkmap:put" + position + ":" + isChecked);
                             checkmap.put(position, isChecked);
                         }
                     });
@@ -165,14 +168,14 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
                             notifyDataSetChanged();
                         }
                     });
-                    if(cancheck){
+                    if (cancheck) {
                         ((ViewHolderContent) holder).check.setVisibility(View.VISIBLE);
-                    }else{
+                    } else {
                         ((ViewHolderContent) holder).check.setVisibility(View.GONE);
                     }
-                    if(checkmap.get(position)!=null&&checkmap.get(position)){
+                    if (checkmap.get(position) != null && checkmap.get(position)) {
                         ((ViewHolderContent) holder).check.setChecked(true);
-                    }else{
+                    } else {
                         ((ViewHolderContent) holder).check.setChecked(false);
                     }
                     switch (menuListData.get(position).getEntityvalue().getFileType()) {
@@ -189,37 +192,30 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
         }
 
     }
-    public List<File> getFileSelectList(){
-        List<File> fileselect=new ArrayList<File>();
+
+    public List<File> getFileSelectList() {
+        List<File> fileselect = new ArrayList<File>();
         for (Map.Entry<Integer, Boolean> entry : checkmap.entrySet()) {
-            if(entry.getValue()){
+            if (entry.getValue()) {
                 fileselect.add(menuListData.get(entry.getKey()).getEntityvalue().getOrg());
             }
         }
         return fileselect;
     }
-    public void checkBoxFresh(){
-        if(cancheck){
+
+    public void checkBoxFresh() {
+        if (cancheck) {
             Static_InfoApp.create().getContext().sendBroadcast(new Intent(Mode_EvidenceCollect.show));
-        }else{
+        } else {
             Static_InfoApp.create().getContext().sendBroadcast(new Intent(Mode_EvidenceCollect.dismiss));
         }
     }
+
     @Override
     public int getItemViewType(int position) {
         return menuListData.get(position).getViewtype();
     }
 
-//    public void addItem(ExpandMap expandMap) {
-//        final int id = mCurrentItemId++;
-//        menuListData.add(id, expandMap);
-//        notifyItemInserted(id);
-//    }
-
-//    public void removeItem(int position) {
-//        menuListData.remove(position);
-//        notifyItemRemoved(position);
-//    }
 
     @Override
     public int getItemCount() {
@@ -243,6 +239,7 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
         ImageView fileflag;
         AutoCheckBox check;
         ImageView deletemark;
+
         public ViewHolderContent(View itemView) {
             super(itemView);
             itemView.setLayoutParams(new LinearLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, (int) Static_InfoApp.create().getAppScreenWidth() / 4));
@@ -250,8 +247,8 @@ public class Adapter_CollectList extends RecyclerView.Adapter<RecyclerView.ViewH
             logimage = (ImageView) itemView.findViewById(R.id.needfiximage);
             check = (AutoCheckBox) itemView.findViewById(R.id.checkBox1);
             fileflag = (ImageView) itemView.findViewById(R.id.fileflag);
-            deletemark=(ImageView) itemView.findViewById(R.id.deletemark);
-            RelativeLayout.LayoutParams pra=new RelativeLayout.LayoutParams((int)Static_InfoApp.create().getAppScreenWidth()/13, (int)Static_InfoApp.create().getAppScreenWidth()/13);
+            deletemark = (ImageView) itemView.findViewById(R.id.deletemark);
+            RelativeLayout.LayoutParams pra = new RelativeLayout.LayoutParams((int) Static_InfoApp.create().getAppScreenWidth() / 13, (int) Static_InfoApp.create().getAppScreenWidth() / 13);
             pra.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
             pra.addRule(RelativeLayout.ALIGN_PARENT_TOP);
             check.setLayoutParams(pra);
